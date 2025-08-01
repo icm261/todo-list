@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDo List</title>
+</head>
+  <body class="bg-gray-200">
+    <header class="bg-blue-800">
+        <div class="mx-auto max-w-7xl px-2">
+            <div class="flex h-40 items-center justify-center">
+                <h1 class="text-4xl text-white font-bold">
+                    Inakshi's To-Do List
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="mx-auto max-w-5xl px-2">
+            <div class="flex h-30 items-center justify-center">
+                <div class="flex space-x-3">
+                    <a
+                        href="index.html"
+                        class="text-black bg-blue-300 hover:bg-blue-800 hover:text-white rounded-sm px-15 py-2"
+                    >
+                        Today
+                    </a>
+                    <a
+                        href="categories.html"
+                        class="text-white bg-blue-800 rounded-sm px-15 py-2"
+                    >
+                        Categories
+                    </a>
+                    <a
+                        href="dailies.html"
+                        class="text-black bg-blue-300 hover:bg-blue-800 hover:text-white rounded-sm px-15 py-2"
+                    >
+                        Dailies
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="mx-auto max-w-6xl px-2">
+            <div class="flex items-center justify-between">
+                <h2 class="font-bold text-2xl">Categories</h2>
+                <a href="create.html">
+                <button 
+                    class="inline-block w-40 h-10 text-white bg-blue-800 hover:bg-blue-700 rounded-sm cursor-pointer"
+                >
+                    Create Task +
+                </button>
+                </a>
+            </div>
+           
+
+            <div class="flex items-center justify-center">
+                <div class="grid grid-cols-2 py-10 gap-15">
+                    <div class="bg-purple-300 min-h-100 w-100 rounded-md shadow-md overflow-hidden">
+                        <div class="bg-purple-700 mb-6">
+                            <div class="flex h-15 items-center justify-center">
+                                 <h3 class="text-2xl text-white font-bold">
+                                     Film/Video
+                                 </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-purple-700 hover:bg-purple-600 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Finish Marketscale Trial Edit</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-gray-400 rounded-sm shadow-md"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Silent Cinema Reels Edit</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-purple-700 hover:bg-purple-600 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">PMA Edit</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-green-300 min-h-100 w-100 rounded-md shadow-md overflow-hidden">
+                        <div class="bg-green-700 mb-6">
+                            <div class="flex h-15 items-center justify-center">
+                                 <h3 class="text-2xl text-white font-bold">
+                                     Writing
+                                 </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-green-700 hover:bg-green-600 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Notting Hill/Sammohanam Intro</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-green-700 hover:bg-green-600 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Metro In Dino Review</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-pink-300 min-h-100 w-100 rounded-md shadow-md overflow-hidden">
+                        <div class="bg-pink-500 mb-6">
+                            <div class="flex h-15 items-center justify-center">
+                                 <h3 class="text-2xl text-white font-bold">
+                                     Correspondence
+                                 </h3>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center">
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-pink-500 hover:bg-pink-400 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Email Alyssa</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-orange-300 min-h-100 w-100 rounded-md shadow-md overflow-hidden">
+                        <div class="bg-orange-500 mb-6">
+                            <div class="flex h-15 items-center justify-center">
+                                 <h3 class="text-2xl text-white font-bold">
+                                     Computer Science
+                                 </h3>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col items-center justify-center">
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-orange-500 hover:bg-orange-400 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Email Alyssa</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-indigo-300 min-h-100 w-100 rounded-md shadow-md overflow-hidden">
+                        <div class="bg-indigo-500 mb-6">
+                            <div class="flex h-15 items-center justify-center">
+                                 <h3 class="text-2xl text-white font-bold">
+                                     Photography
+                                 </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-indigo-500 hover:bg-indigo-400 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Photobook Intro InDesign</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-300 min-h-100 w-100 rounded-md shadow-md overflow-hidden">
+                        <div class="bg-gray-500 mb-6">
+                            <div class="flex h-15 items-center justify-center">
+                                 <h3 class="text-2xl text-white font-bold">
+                                     Other
+                                 </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <button 
+                                class="inline-block w-90 min-h-7 mb-2 bg-gray-500 hover:bg-gray-400 rounded-sm shadow-md cursor-pointer"
+                            >
+                            <div class="flex items-center justify-between">
+                                <p class="px-4 text-[12px] text-white font-[600] text-left">Wash Shoes</p>
+                                <div class="flex px-4">
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-square-check"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-pen-to-square"></i>
+                                    <i class="p-2 text-[12px] text-white hover:text-gray-600 fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </body>
+</html>
