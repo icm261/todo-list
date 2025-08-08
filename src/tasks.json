@@ -36,7 +36,7 @@
       "id": "1abd",
       "name": "Silent Cinema Reels Work",
       "category": "Film/Video",
-      "today": false,
+      "today": true,
       "priority": false,
       "complete": false
     },
@@ -76,7 +76,7 @@
       "id": "e568",
       "name": "Return Normal People",
       "category": "Other",
-      "today": true,
+      "today": false,
       "priority": false,
       "complete": false
     },
@@ -85,14 +85,6 @@
       "name": "Ponman Writeup Draft",
       "category": "Writing",
       "today": false,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "8417",
-      "name": "ToDo List Attempt Nested Objects",
-      "category": "Computer Science",
-      "today": true,
       "priority": false,
       "complete": false
     },
@@ -124,7 +116,7 @@
       "id": "7429",
       "name": "Draft Email Alyssa",
       "category": "Correspondence",
-      "today": true,
+      "today": false,
       "priority": false,
       "complete": false
     },
@@ -140,7 +132,7 @@
       "id": "1a74",
       "name": "Mail Cigna Paperwork",
       "category": "Other",
-      "today": true,
+      "today": false,
       "priority": false,
       "complete": false
     },
@@ -148,6 +140,22 @@
       "id": "fb77",
       "name": "Baby Blanket Research",
       "category": "Other",
+      "today": true,
+      "priority": false,
+      "complete": false
+    },
+    {
+      "id": "6d92",
+      "name": "Call Dentist",
+      "category": "Correspondence",
+      "today": true,
+      "priority": false,
+      "complete": false
+    },
+    {
+      "id": "9165",
+      "name": "Complete Convert HTML Wordpress Tutorial",
+      "category": "Computer Science",
       "today": true,
       "priority": false,
       "complete": false
