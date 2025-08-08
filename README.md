@@ -2,10 +2,10 @@
 
 This todo list is a basic react application to keep track of daily activities. It includes the ability to add/edit/delete tasks, categorize into six color-coded categories, prioritize the three most important tasks, and choose which tasks need to be completed today.
 
-
+Homepage:
 ![alt](/src/assets/images/ToDo_1.png)
 
-
+Categories:
 ![alt](/src/assets/images/ToDo_2.png)
 
 ### Built With
