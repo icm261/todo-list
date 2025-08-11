@@ -1,163 +1,99 @@
 {
   "tasks": [
     {
-      "id": "2",
-      "name": "Notting Hill/Sammohanam 3 Paras",
-      "category": "Writing",
+      "id": "a36e",
+      "name": "Text John",
+      "category": "Correspondence",
       "today": false,
       "priority": false,
       "complete": false
     },
     {
-      "id": "3",
-      "name": "Saiyaara/KYY Draft",
-      "category": "Writing",
+      "id": "b409",
+      "name": "Email Insurance Paperwork",
+      "category": "Other",
       "today": true,
       "priority": true,
       "complete": false
     },
     {
-      "id": "5",
-      "name": "Respond Siraj",
-      "category": "Correspondence",
-      "today": true,
-      "priority": true,
-      "complete": false
-    },
-    {
-      "id": "26b8",
-      "name": "Nucleate Onboarding",
+      "id": "0034",
+      "name": "Complete Podcast Draft",
       "category": "Film/Video",
       "today": false,
       "priority": false,
       "complete": false
     },
     {
-      "id": "1abd",
-      "name": "Silent Cinema Reels Work",
+      "id": "4fb1",
+      "name": "Three Reels of Podcast 1",
       "category": "Film/Video",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "2746",
-      "name": "Saiyaara/KYY Photo Edit",
-      "category": "Writing",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "4b3a",
-      "name": "Amir CT Photos Edit/Upload",
-      "category": "Photography",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "145e",
-      "name": "Photobook InDesign Create Intro",
-      "category": "Photography",
-      "today": false,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "a9bd",
-      "name": "Call Cigna ",
-      "category": "Correspondence",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "e568",
-      "name": "Return Normal People",
-      "category": "Other",
-      "today": false,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "5a7d",
-      "name": "Ponman Writeup Draft",
-      "category": "Writing",
-      "today": false,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "a2b0",
-      "name": "Apply 8 Jobs",
-      "category": "Other",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "786a",
-      "name": "Add 10 Jobs to List",
-      "category": "Other",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "6c2c",
-      "name": "Text Ryan about Equipment/Travel",
-      "category": "Correspondence",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "7429",
-      "name": "Draft Email Alyssa",
-      "category": "Correspondence",
-      "today": false,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "2260",
-      "name": "Send CREC Rejection Response",
-      "category": "Correspondence",
       "today": true,
       "priority": true,
       "complete": false
     },
     {
-      "id": "1a74",
-      "name": "Mail Cigna Paperwork",
-      "category": "Other",
+      "id": "68a3",
+      "name": "Intro of Mani Ratnam Essay",
+      "category": "Writing",
       "today": false,
       "priority": false,
       "complete": false
     },
     {
-      "id": "fb77",
-      "name": "Baby Blanket Research",
-      "category": "Other",
+      "id": "cb01",
+      "name": "Edit 100 Pics of Graduation Party",
+      "category": "Photography",
       "today": true,
       "priority": false,
       "complete": false
     },
     {
-      "id": "6d92",
-      "name": "Call Dentist",
-      "category": "Correspondence",
-      "today": true,
-      "priority": false,
-      "complete": false
-    },
-    {
-      "id": "9165",
-      "name": "Complete Convert HTML Wordpress Tutorial",
+      "id": "e40a",
+      "name": "Update ReadMe of ToDo List",
       "category": "Computer Science",
       "today": true,
       "priority": false,
+      "complete": false
+    },
+    {
+      "id": "4cfe",
+      "name": "Organize Side Table",
+      "category": "Other",
+      "today": true,
+      "priority": false,
+      "complete": false
+    },
+    {
+      "id": "7109",
+      "name": "Register for League",
+      "category": "Other",
+      "today": true,
+      "priority": false,
+      "complete": false
+    },
+    {
+      "id": "1edb",
+      "name": "Create Photo Edit for Saiyaara Writeup",
+      "category": "Writing",
+      "today": false,
+      "priority": false,
+      "complete": false
+    },
+    {
+      "id": "4044",
+      "name": "Saiyaara Writeup Draft",
+      "category": "Writing",
+      "today": true,
+      "priority": false,
+      "complete": false
+    },
+    {
+      "id": "17c9",
+      "name": "Schedule Doctor's Appt",
+      "category": "Correspondence",
+      "today": true,
+      "priority": true,
       "complete": false
     }
   ]
