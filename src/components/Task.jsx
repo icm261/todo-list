@@ -1,72 +1,72 @@
 import { FaEdit } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
 import { FaSquareCheck } from "react-icons/fa6";
-import { deleteTask, updateTask } from "../api";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 import { taskColor } from "../utils";
+import { useState } from "react";
 
-const Task = ({ task, isCategory, numPriorities = 0 }) => {
+const Task = ({ task, isCategory, numPriorities, category, handleUpdate, deleteTask }) => {
 
-    const onDeleteTask = (taskID) => {
-        const confirm = window.confirm('Are you sure you want to delete this task?');
+    const [today, setToday] = useState(task.today);
+    const [complete, setComplete] = useState(task.complete);
+    const [priority, setPriority] = useState(task.priority);
 
-        if (!confirm) return;
-        deleteTask(taskID);
-        toast.success('Task Deleted Successfully');
-    }
 
-    const changeTask = {
+    const updatedTask = {
         id: task.id,
         name: task.name,
-        category: task.category,
         today: task.today,
         priority: task.priority,
         complete: task.complete,
     };
 
     const toggleToday = () => {
-        changeTask.today = !changeTask.today;
-        updateTask(changeTask);
+        updatedTask.today = !today;
+        updatedTask.priority = !updatedTask.today && priority ? !priority : null;
+        handleUpdate(updatedTask, category);
+        setToday(!today);
+        setPriority(updatedTask.priority);
     }
 
     const togglePriority = () => {
         if (numPriorities >= 3 && !task.priority) return;
         
-        changeTask.priority = !changeTask.priority;
-        updateTask(changeTask);
+        updatedTask.priority = !priority;
+        handleUpdate(updatedTask, category);
+        setPriority(!priority);
     }
 
     const completeTask = () => {
-        changeTask.complete = !changeTask.complete;
-        updateTask(changeTask);
+        updatedTask.complete = !complete;
+        handleUpdate(updatedTask, category);
+        setComplete(!complete);
     }
 
-    let bg = isCategory && task.today ? 'bg-gray-400' : taskColor(task.category, 'taskColor');
+    let bg = isCategory && today ? 'bg-gray-400' : taskColor(category.category, 'taskColor');
     
-    let taskSize = isCategory ? 'w-90 min-h-7 mb-2' : 'w-120 min-h-10';
+    let taskSize = isCategory ? 'w-80 min-h-7 mb-2' : 'w-120 min-h-10';
     let textSize = isCategory ? 'text-[12px]' : '';
     
-    let iconColor = isCategory && task.today ? 'text-gray-600' : 'text-white hover:text-gray-600';
+    let iconColor = isCategory && today ? 'text-gray-600' : 'text-white hover:text-gray-600';
     
     return (
         <button 
             type="button"
-            className={`inline-block ${taskSize} ${bg} ${task.priority ? 'border-l-10 border-red-600' : ''} rounded-sm shadow-md cursor-pointer`}
+            className={`inline-block ${taskSize} ${bg} ${priority ? 'border-l-10 border-red-600' : ''} rounded-sm shadow-md cursor-pointer`}
             onDoubleClick={!isCategory ? () => togglePriority() : null}
         >
             <div className="flex items-center justify-between">
                 <p 
                     type="button"
                     onClick = {() => completeTask()} 
-                    className={`px-4 ${textSize} text-white font-[600] text-left ${task.complete ? 'line-through' : ''}`}
+                    className={`px-4 ${textSize} text-white font-[600] text-left ${complete ? 'line-through' : ''}`}
                 >
                     { task.name }
                 </p>
                 <div className="flex px-4">
                     {isCategory ?  <FaSquareCheck onClick={() => toggleToday()} className={`mx-2 ${textSize} ${iconColor}`}/> : null }
-                    <Link to={`/edit/${task.id}`}><FaEdit className={`mx-2 ${textSize} text-white hover:text-gray-600`}/></Link>
-                    <FaTrash onClick={() => onDeleteTask(task.id)} className={`mx-2 ${textSize} text-white hover:text-gray-600`}/>
+                    <Link to={`/edit/${category.id}?taskID=${task.id}`}><FaEdit className={`mx-2 ${textSize} text-white hover:text-gray-600`}/></Link>
+                    <FaTrash onClick={() => deleteTask(task.id, category)} className={`mx-2 ${textSize} text-white hover:text-gray-600`}/>
                 </div>
             </div>
         </button>

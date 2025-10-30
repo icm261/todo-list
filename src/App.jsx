@@ -7,7 +7,8 @@ import HomePage from "./pages/HomePage.jsx";
 import CategoriesPage from "./pages/CategoriesPage.jsx";
 import ComingSoonPage from './pages/ComingSoonPage.jsx';
 import CreateTaskPage from './pages/CreateTaskPage.jsx';
-import EditJobPage, { taskLoader } from './pages/EditJobPage.jsx';
+import EditJobPage from './pages/EditJobPage.jsx';
+import { taskLoader } from './api.js';
 
 const App = () => {
 
@@ -25,7 +26,8 @@ const App = () => {
         },
         {
           path: '/create',
-          element: <CreateTaskPage />
+          element: <CreateTaskPage />,
+          loader: taskLoader
         },
         {
           path: '/edit/:id',

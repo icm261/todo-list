@@ -1,4 +1,4 @@
-const Form = ({ name, setName, category, setCategory, submitForm}) => {
+const Form = ({ name, setName, category, setCategory, project, setProject, submitForm, page}) => {
     return (
         <>
             <section>
@@ -11,7 +11,7 @@ const Form = ({ name, setName, category, setCategory, submitForm}) => {
                         </button>
                     </a>            
                     <div className="flex flex-col items-center justify-center">
-                        <h2 className="font-bold text-2xl mb-15">Create Task</h2>
+                        <h2 className="font-bold text-2xl mb-15">{page} Task</h2>
                         <form onSubmit={submitForm}>
                             <div className="mb-8">
                                 <label htmlFor="name" className="block mb-3">Task Name</label>
@@ -25,6 +25,16 @@ const Form = ({ name, setName, category, setCategory, submitForm}) => {
                                 />
                             </div>
                             <div className="mb-8">
+                                <label htmlFor="name" className="block mb-3">Project Name</label>
+                                <input type="text" 
+                                        id="name" 
+                                        name="name" 
+                                        className="bg-gray-50 w-120 border border-gray-300 rounded-lg focus:border-blue-500 p-3 block" 
+                                        value={project} 
+                                        onChange={(e) => setProject(e.target.value)}
+                                />
+                            </div>
+                            <div className="mb-8">
                                 <label htmlFor="category" className="block mb-3">Category</label>
                                 <select id="category" 
                                         name="category" 
@@ -35,8 +45,8 @@ const Form = ({ name, setName, category, setCategory, submitForm}) => {
                                 >
                                     <option value="Film/Video">Film/Video</option>
                                     <option value="Writing">Writing</option>
-                                    <option value="Correspondence">Correspondence</option>
                                     <option value="Computer Science">Computer Science</option>
+                                    <option value="Correspondence">Correspondence</option>
                                     <option value="Photography">Photography</option>
                                     <option value="Other">Other</option>
                                 </select>
